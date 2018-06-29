@@ -12,7 +12,7 @@
 #ifdef __OBJC__
 
 
-
+#import "RJBLogHeader.h"
 
 
 #endif

@@ -28,7 +28,7 @@
 
     CGRect temp = [name boundingRectWithSize:KLogModelMaxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:self.fontNum]} context:nil];
     
-    self.rowHeight = temp.size.height + 20;
+    self.log_rowHeight = temp.size.height + 20;
 }
 
 - (NSInteger)fontNum {

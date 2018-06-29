@@ -9,6 +9,8 @@
 #import "RJBLogViewController.h"
 #import "RJBLogCell.h"
 #import "RJBLogHeader.h"
+#import "RJBLogModel.h"
+#import "RJBLogWindow.h"
 
 
 @interface RJBLogViewController ()<UITableViewDataSource,UITableViewDelegate>
@@ -48,7 +50,7 @@ static NSString *const RJBLogCellIdentifier = @"RJBLogCellIdentifier";
     RJBLogModel *model = self.modelArr[indexPath.row];
     
     
-    return model.rowHeight ? model.rowHeight : 50;
+    return model.log_rowHeight ? model.log_rowHeight : 50;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

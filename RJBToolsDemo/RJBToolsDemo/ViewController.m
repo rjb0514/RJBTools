@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "RJBLogHeader.h"
 #import "RJBFloatPot.h"
+#import "RJBLogWindow.h"
 
 static UIWindow *win;
 
@@ -35,6 +36,9 @@ static UIWindow *win;
     
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [btn addGestureRecognizer:pan];
+    
+    char *env ="DYLD_INSERT_LIBRARIES";
+    NSLog(@"%s",env);
 }
 
 - (void)pan:(UIPanGestureRecognizer *)pan {

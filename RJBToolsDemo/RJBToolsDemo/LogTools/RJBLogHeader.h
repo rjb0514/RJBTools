@@ -9,8 +9,7 @@
 #ifndef RJBLogHeader_h
 #define RJBLogHeader_h
 
-#import "RJBLogModel.h"
-#import "RJBLogWindow.h"
+
 #import "RJBLogManager.h"
 
 

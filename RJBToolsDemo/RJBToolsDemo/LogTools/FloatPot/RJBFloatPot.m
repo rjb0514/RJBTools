@@ -12,6 +12,8 @@
 @implementation RJBFloatPot
 
 + (instancetype)sharedFloatPot {
+    
+#ifdef __Test_Evn__
     static RJBFloatPot *pot = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -23,6 +25,10 @@
         pot.rootViewController = potVC;
     });
     return pot;
+#else
+    return nil;
+#endif
+  
 }
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {

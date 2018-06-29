@@ -18,7 +18,7 @@
 @property (nonatomic, assign) NSInteger     age;
 
 /** 行高 */
-@property (nonatomic, assign) CGFloat   rowHeight;
+@property (nonatomic, assign) CGFloat   log_rowHeight;
 
 /** 文字的 字号 */
 @property (nonatomic, assign) NSInteger   fontNum;

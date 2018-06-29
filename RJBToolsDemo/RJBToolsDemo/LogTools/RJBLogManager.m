@@ -20,6 +20,7 @@
 
 static RJBLogManager *__manager = nil;
 + (instancetype)sharedLogManger {
+#ifdef __Test_Evn__
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         __manager = [[RJBLogManager alloc] init];
@@ -27,6 +28,11 @@ static RJBLogManager *__manager = nil;
         [__manager.dataFormatter setDateFormat:@"MM-dd HH:mm:ss.SSSSSS"];
     });
     return __manager;
+#else
+    return nil;
+    
+#endif
+    
 }
 
 + (void)addLog:(NSString *)logStr {
@@ -51,6 +57,12 @@ static RJBLogManager *__manager = nil;
 
 /** 配置查看日志的控制器 */
 + (void)configLogView {
-    [RJBFloatPot sharedFloatPot];
+
+#ifdef __Test_Evn__
+    
+        [RJBFloatPot sharedFloatPot];
+#endif
+    
+
 }
 @end

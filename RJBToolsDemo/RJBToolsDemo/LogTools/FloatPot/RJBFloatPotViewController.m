@@ -24,6 +24,12 @@
     self.displayBtn.center = self.view.center;
     [self.view addSubview:self.displayBtn];
     
+    CGSize btnSize = self.displayBtn.bounds.size;
+    CGSize viewSize = self.view.bounds.size;
+    
+    CGRect temp = CGRectMake(viewSize.width - btnSize.width - 20, 100, btnSize.width, btnSize.height);
+    self.displayBtn.frame = temp;
+    
 }
 
 - (void)displayBtnClick {
@@ -42,6 +48,28 @@
     
     CGPoint point = [pan locationInView:self.view];
     
+    [self.displayBtn sizeToFit];
+    CGSize btnSize = self.displayBtn.bounds.size;
+    CGSize viewSize = self.view.bounds.size;
+    CGFloat maxX = viewSize.width - btnSize.width/2.0;
+    CGFloat minX = btnSize.width/2.0;
+    CGFloat maxH = viewSize.height - btnSize.height/2.0 - 64;
+    CGFloat minH = 40 + btnSize.width/2.0;
+    
+    if (point.x > maxX) {
+        point.x = maxX;
+    }
+    if (point.x < minX) {
+        point.x = minX;
+    }
+    
+    if (point.y > maxH) {
+        point.y = maxH;
+    }
+    
+    if (point.y < minH) {
+        point.y = minH;
+    }
     [UIView animateWithDuration:0.25 animations:^{
         self.displayBtn.center = point;
         
