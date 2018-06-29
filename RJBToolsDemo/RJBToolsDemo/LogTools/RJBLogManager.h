@@ -15,9 +15,15 @@
 /** 管理者单利 */
 + (instancetype)sharedLogManger;
 
+/** 配置查看日志的控制器 */
++ (void)configLogView;
+
 /** 添加日志 */
 + (void)addLog:(NSString *)logStr;
 + (void)showLogWindow;
 + (void)hiddenLogWindow;
+
+
+
 
 @end

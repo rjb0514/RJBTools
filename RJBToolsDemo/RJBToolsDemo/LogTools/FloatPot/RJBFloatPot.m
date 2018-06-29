@@ -7,6 +7,7 @@
 //
 
 #import "RJBFloatPot.h"
+#import "RJBFloatPotViewController.h"
 
 @implementation RJBFloatPot
 
@@ -17,11 +18,19 @@
         pot = [[RJBFloatPot alloc] initWithFrame:[UIScreen mainScreen].bounds];
         pot.backgroundColor = [UIColor clearColor];
         pot.windowLevel = UIWindowLevelAlert + 10;
-        pot.hidden = YES;
-//        RJBLogViewController *logvc = [[RJBLogViewController alloc] init];
-//        logWindow.rootViewController = logvc;
+        pot.hidden = NO;
+        RJBFloatPotViewController *potVC = [[RJBFloatPotViewController alloc] init];
+        pot.rootViewController = potVC;
     });
     return pot;
+}
+
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *view = [super hitTest:point withEvent:event];
+    if ([view isEqual:self.rootViewController.view]) {
+        return nil;
+    }
+    return view;
 }
 
 @end

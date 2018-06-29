@@ -8,10 +8,13 @@
 
 #import "ViewController.h"
 #import "RJBLogHeader.h"
+#import "RJBFloatPot.h"
 
 static UIWindow *win;
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UIButton         *btn;
 
 @end
 
@@ -27,6 +30,22 @@ static UIWindow *win;
     btn.center = self.view.center;
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    _btn = btn;
+    
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
+    [btn addGestureRecognizer:pan];
+}
+
+- (void)pan:(UIPanGestureRecognizer *)pan {
+  
+    CGPoint point = [pan locationInView:self.view];
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        _btn.center = point;
+        
+    }];
+    
 }
 
 
@@ -45,8 +64,8 @@ static UIWindow *win;
     static NSInteger num = 0;
     num ++ ;
     NSString *str = [NSString stringWithFormat:@"按钮点击了---%zd",num];
-    NSLog(@"%@",str);
-    NSLog(@"甲方可拉倒就发了大甲方拉大锯奥拉夫是的家乐福电视剧啊垃圾分类暗示法几点啦会计法");
+    
+    [RJBFloatPot sharedFloatPot];
 }
 
 @end

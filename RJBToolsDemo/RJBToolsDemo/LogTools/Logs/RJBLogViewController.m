@@ -102,7 +102,7 @@ static NSString *const RJBLogCellIdentifier = @"RJBLogCellIdentifier";
     [self.tableView reloadData];
     if (self.modelArr.count) {
         NSIndexPath *index = [NSIndexPath indexPathForRow:self.modelArr.count - 1 inSection:0];
-        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:(UITableViewScrollPositionBottom) animated:YES];
+        [self.tableView scrollToRowAtIndexPath:index atScrollPosition:(UITableViewScrollPositionBottom) animated:NO];
     }
 }
 
@@ -123,12 +123,6 @@ static NSString *const RJBLogCellIdentifier = @"RJBLogCellIdentifier";
 - (NSMutableArray<RJBLogModel *> *)modelArr {
     if (!_modelArr) {
         _modelArr = [NSMutableArray array];
-        
-        for (NSInteger i = 0; i < 3; i++) {
-            RJBLogModel *model = [[RJBLogModel alloc] init];
-            model.name = @"解放东路撒娇的时刻垃圾分类到静安寺发了家乐福加拉飞机就";
-            [_modelArr addObject:model];
-        }
     }
     return _modelArr;
 }

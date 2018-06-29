@@ -16,14 +16,15 @@
 		9394758520E3829600C152D4 /* RJBToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9394758420E3829600C152D4 /* RJBToolsDemoTests.m */; };
 		9394759020E3829600C152D4 /* RJBToolsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9394758F20E3829600C152D4 /* RJBToolsDemoUITests.m */; };
 		9394759F20E382AC00C152D4 /* RJBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9394759E20E382AC00C152D4 /* RJBBaseViewController.m */; };
+		93F36E7820E626D200E5E089 /* RJBLogBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93F36E6620E626D200E5E089 /* RJBLogBundle.bundle */; };
+		93F36E7920E626D200E5E089 /* RJBLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E6720E626D200E5E089 /* RJBLogManager.m */; };
+		93F36E7A20E626D200E5E089 /* RJBFloatPotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E6920E626D200E5E089 /* RJBFloatPotViewController.m */; };
+		93F36E7B20E626D200E5E089 /* RJBFloatPot.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E6C20E626D200E5E089 /* RJBFloatPot.m */; };
+		93F36E7C20E626D200E5E089 /* RJBLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E6E20E626D200E5E089 /* RJBLogCell.m */; };
+		93F36E7D20E626D200E5E089 /* RJBLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E7220E626D200E5E089 /* RJBLogViewController.m */; };
+		93F36E7E20E626D200E5E089 /* RJBLogWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E7420E626D200E5E089 /* RJBLogWindow.m */; };
+		93F36E7F20E626D200E5E089 /* RJBLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E7520E626D200E5E089 /* RJBLogModel.m */; };
 		93FCE70120E4835200F967F6 /* RJBFileManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE6FF20E4835200F967F6 /* RJBFileManage.m */; };
-		93FCE70520E4838B00F967F6 /* RJBLogWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE70420E4838B00F967F6 /* RJBLogWindow.m */; };
-		93FCE70820E4B37400F967F6 /* RJBLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE70720E4B37400F967F6 /* RJBLogViewController.m */; };
-		93FCE70B20E4BB9900F967F6 /* RJBLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE70A20E4BB9900F967F6 /* RJBLogModel.m */; };
-		93FCE70E20E4BD3D00F967F6 /* RJBLogCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE70D20E4BD3D00F967F6 /* RJBLogCell.m */; };
-		93FCE72720E60AD600F967F6 /* RJBLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE72620E60AD600F967F6 /* RJBLogManager.m */; };
-		93FCE72B20E61D1600F967F6 /* RJBFloatPot.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE72A20E61D1600F967F6 /* RJBFloatPot.m */; };
-		93FCE72E20E61DAE00F967F6 /* RJBFloatPotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FCE72D20E61DAE00F967F6 /* RJBFloatPotViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,24 +63,25 @@
 		9394759120E3829600C152D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9394759D20E382AC00C152D4 /* RJBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBBaseViewController.h; sourceTree = "<group>"; };
 		9394759E20E382AC00C152D4 /* RJBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBBaseViewController.m; sourceTree = "<group>"; };
+		93F36E6620E626D200E5E089 /* RJBLogBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RJBLogBundle.bundle; sourceTree = "<group>"; };
+		93F36E6720E626D200E5E089 /* RJBLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBLogManager.m; sourceTree = "<group>"; };
+		93F36E6920E626D200E5E089 /* RJBFloatPotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBFloatPotViewController.m; sourceTree = "<group>"; };
+		93F36E6A20E626D200E5E089 /* RJBFloatPot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBFloatPot.h; sourceTree = "<group>"; };
+		93F36E6B20E626D200E5E089 /* RJBFloatPotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBFloatPotViewController.h; sourceTree = "<group>"; };
+		93F36E6C20E626D200E5E089 /* RJBFloatPot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBFloatPot.m; sourceTree = "<group>"; };
+		93F36E6E20E626D200E5E089 /* RJBLogCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBLogCell.m; sourceTree = "<group>"; };
+		93F36E6F20E626D200E5E089 /* RJBLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBLogViewController.h; sourceTree = "<group>"; };
+		93F36E7020E626D200E5E089 /* RJBLogWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBLogWindow.h; sourceTree = "<group>"; };
+		93F36E7120E626D200E5E089 /* RJBLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBLogModel.h; sourceTree = "<group>"; };
+		93F36E7220E626D200E5E089 /* RJBLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBLogViewController.m; sourceTree = "<group>"; };
+		93F36E7320E626D200E5E089 /* RJBLogCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBLogCell.h; sourceTree = "<group>"; };
+		93F36E7420E626D200E5E089 /* RJBLogWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBLogWindow.m; sourceTree = "<group>"; };
+		93F36E7520E626D200E5E089 /* RJBLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBLogModel.m; sourceTree = "<group>"; };
+		93F36E7620E626D200E5E089 /* RJBLogHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBLogHeader.h; sourceTree = "<group>"; };
+		93F36E7720E626D200E5E089 /* RJBLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBLogManager.h; sourceTree = "<group>"; };
 		93FCE6FF20E4835200F967F6 /* RJBFileManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBFileManage.m; sourceTree = "<group>"; };
 		93FCE70020E4835200F967F6 /* RJBFileManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RJBFileManage.h; sourceTree = "<group>"; };
-		93FCE70320E4838B00F967F6 /* RJBLogWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLogWindow.h; sourceTree = "<group>"; };
-		93FCE70420E4838B00F967F6 /* RJBLogWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBLogWindow.m; sourceTree = "<group>"; };
-		93FCE70620E4B37400F967F6 /* RJBLogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLogViewController.h; sourceTree = "<group>"; };
-		93FCE70720E4B37400F967F6 /* RJBLogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBLogViewController.m; sourceTree = "<group>"; };
-		93FCE70920E4BB9900F967F6 /* RJBLogModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLogModel.h; sourceTree = "<group>"; };
-		93FCE70A20E4BB9900F967F6 /* RJBLogModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBLogModel.m; sourceTree = "<group>"; };
-		93FCE70C20E4BD3D00F967F6 /* RJBLogCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLogCell.h; sourceTree = "<group>"; };
-		93FCE70D20E4BD3D00F967F6 /* RJBLogCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBLogCell.m; sourceTree = "<group>"; };
 		93FCE70F20E4BE9900F967F6 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		93FCE72420E606B200F967F6 /* RJBLogHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLogHeader.h; sourceTree = "<group>"; };
-		93FCE72520E60AD600F967F6 /* RJBLogManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBLogManager.h; sourceTree = "<group>"; };
-		93FCE72620E60AD600F967F6 /* RJBLogManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBLogManager.m; sourceTree = "<group>"; };
-		93FCE72920E61D1600F967F6 /* RJBFloatPot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBFloatPot.h; sourceTree = "<group>"; };
-		93FCE72A20E61D1600F967F6 /* RJBFloatPot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBFloatPot.m; sourceTree = "<group>"; };
-		93FCE72C20E61DAE00F967F6 /* RJBFloatPotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBFloatPotViewController.h; sourceTree = "<group>"; };
-		93FCE72D20E61DAE00F967F6 /* RJBFloatPotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBFloatPotViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,8 +132,7 @@
 		9394756A20E3829500C152D4 /* RJBToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				93FCE72820E61CF300F967F6 /* FloatPot */,
-				93FCE70220E4836E00F967F6 /* LogTools */,
+				93FCE73320E6252500F967F6 /* LogTools */,
 				93FCE6FE20E4835200F967F6 /* Utils */,
 				9394756B20E3829500C152D4 /* AppDelegate.h */,
 				9394756C20E3829500C152D4 /* AppDelegate.m */,
@@ -167,6 +168,32 @@
 			path = RJBToolsDemoUITests;
 			sourceTree = "<group>";
 		};
+		93F36E6820E626D200E5E089 /* FloatPot */ = {
+			isa = PBXGroup;
+			children = (
+				93F36E6920E626D200E5E089 /* RJBFloatPotViewController.m */,
+				93F36E6A20E626D200E5E089 /* RJBFloatPot.h */,
+				93F36E6B20E626D200E5E089 /* RJBFloatPotViewController.h */,
+				93F36E6C20E626D200E5E089 /* RJBFloatPot.m */,
+			);
+			path = FloatPot;
+			sourceTree = "<group>";
+		};
+		93F36E6D20E626D200E5E089 /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				93F36E6F20E626D200E5E089 /* RJBLogViewController.h */,
+				93F36E7220E626D200E5E089 /* RJBLogViewController.m */,
+				93F36E7320E626D200E5E089 /* RJBLogCell.h */,
+				93F36E6E20E626D200E5E089 /* RJBLogCell.m */,
+				93F36E7020E626D200E5E089 /* RJBLogWindow.h */,
+				93F36E7420E626D200E5E089 /* RJBLogWindow.m */,
+				93F36E7120E626D200E5E089 /* RJBLogModel.h */,
+				93F36E7520E626D200E5E089 /* RJBLogModel.m */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
 		93FCE6FE20E4835200F967F6 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,33 +203,17 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		93FCE70220E4836E00F967F6 /* LogTools */ = {
+		93FCE73320E6252500F967F6 /* LogTools */ = {
 			isa = PBXGroup;
 			children = (
-				93FCE70320E4838B00F967F6 /* RJBLogWindow.h */,
-				93FCE70420E4838B00F967F6 /* RJBLogWindow.m */,
-				93FCE70620E4B37400F967F6 /* RJBLogViewController.h */,
-				93FCE70720E4B37400F967F6 /* RJBLogViewController.m */,
-				93FCE70920E4BB9900F967F6 /* RJBLogModel.h */,
-				93FCE70A20E4BB9900F967F6 /* RJBLogModel.m */,
-				93FCE70C20E4BD3D00F967F6 /* RJBLogCell.h */,
-				93FCE70D20E4BD3D00F967F6 /* RJBLogCell.m */,
-				93FCE72420E606B200F967F6 /* RJBLogHeader.h */,
-				93FCE72520E60AD600F967F6 /* RJBLogManager.h */,
-				93FCE72620E60AD600F967F6 /* RJBLogManager.m */,
+				93F36E6820E626D200E5E089 /* FloatPot */,
+				93F36E6D20E626D200E5E089 /* Logs */,
+				93F36E6620E626D200E5E089 /* RJBLogBundle.bundle */,
+				93F36E7620E626D200E5E089 /* RJBLogHeader.h */,
+				93F36E7720E626D200E5E089 /* RJBLogManager.h */,
+				93F36E6720E626D200E5E089 /* RJBLogManager.m */,
 			);
 			path = LogTools;
-			sourceTree = "<group>";
-		};
-		93FCE72820E61CF300F967F6 /* FloatPot */ = {
-			isa = PBXGroup;
-			children = (
-				93FCE72920E61D1600F967F6 /* RJBFloatPot.h */,
-				93FCE72A20E61D1600F967F6 /* RJBFloatPot.m */,
-				93FCE72C20E61DAE00F967F6 /* RJBFloatPotViewController.h */,
-				93FCE72D20E61DAE00F967F6 /* RJBFloatPotViewController.m */,
-			);
-			path = FloatPot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9394757820E3829600C152D4 /* LaunchScreen.storyboard in Resources */,
+				93F36E7820E626D200E5E089 /* RJBLogBundle.bundle in Resources */,
 				9394757520E3829600C152D4 /* Assets.xcassets in Resources */,
 				9394757320E3829500C152D4 /* Main.storyboard in Resources */,
 			);
@@ -336,17 +348,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9394757020E3829500C152D4 /* ViewController.m in Sources */,
-				93FCE70B20E4BB9900F967F6 /* RJBLogModel.m in Sources */,
+				93F36E7F20E626D200E5E089 /* RJBLogModel.m in Sources */,
+				93F36E7920E626D200E5E089 /* RJBLogManager.m in Sources */,
+				93F36E7A20E626D200E5E089 /* RJBFloatPotViewController.m in Sources */,
 				9394757B20E3829600C152D4 /* main.m in Sources */,
-				93FCE72B20E61D1600F967F6 /* RJBFloatPot.m in Sources */,
-				93FCE72E20E61DAE00F967F6 /* RJBFloatPotViewController.m in Sources */,
+				93F36E7D20E626D200E5E089 /* RJBLogViewController.m in Sources */,
+				93F36E7C20E626D200E5E089 /* RJBLogCell.m in Sources */,
 				9394759F20E382AC00C152D4 /* RJBBaseViewController.m in Sources */,
-				93FCE70E20E4BD3D00F967F6 /* RJBLogCell.m in Sources */,
-				93FCE70820E4B37400F967F6 /* RJBLogViewController.m in Sources */,
 				9394756D20E3829500C152D4 /* AppDelegate.m in Sources */,
 				93FCE70120E4835200F967F6 /* RJBFileManage.m in Sources */,
-				93FCE70520E4838B00F967F6 /* RJBLogWindow.m in Sources */,
-				93FCE72720E60AD600F967F6 /* RJBLogManager.m in Sources */,
+				93F36E7B20E626D200E5E089 /* RJBFloatPot.m in Sources */,
+				93F36E7E20E626D200E5E089 /* RJBLogWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,7 +7,6 @@
 //
 
 #import "RJBLogModel.h"
-#import "RJBLogManager.h"
 
 #define KLogModelMaxSize CGSizeMake([UIScreen mainScreen].bounds.size.width - 40, MAXFLOAT)
 

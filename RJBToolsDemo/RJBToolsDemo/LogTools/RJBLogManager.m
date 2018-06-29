@@ -9,6 +9,7 @@
 #import "RJBLogManager.h"
 #import "RJBLogViewController.h"
 #import "RJBLogWindow.h"
+#import "RJBFloatPot.h"
 
 @interface RJBLogManager ()
 
@@ -32,11 +33,8 @@ static RJBLogManager *__manager = nil;
     
     RJBLogViewController *logVC = (RJBLogViewController *)[RJBLogWindow sharedLogWindow].rootViewController;
     
-    //去子线程处理数据
-//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        [logVC updateModelData:logStr];
-        
-//    });
+    //跟新数据
+    [logVC updateModelData:logStr];
 }
 
 + (void)showLogWindow {
@@ -50,4 +48,9 @@ static RJBLogManager *__manager = nil;
     [RJBLogWindow sharedLogWindow].hidden = YES;
 }
 
+
+/** 配置查看日志的控制器 */
++ (void)configLogView {
+    [RJBFloatPot sharedFloatPot];
+}
 @end
