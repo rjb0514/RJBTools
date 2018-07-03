@@ -58,11 +58,13 @@ static RJBLogManager *__manager = nil;
 /** 配置查看日志的控制器 */
 + (void)configLogView {
 
+    NSLog(@"1111");
 #ifdef __Test_Evn__
-    
+    NSLog(@"22222");
         [RJBFloatPot sharedFloatPot];
 #endif
     
+    NSLog(@"33333");
 
 }
 @end

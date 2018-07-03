@@ -7,9 +7,9 @@
 //
 
 #import "ViewController.h"
-#import "RJBLogHeader.h"
+
 #import "RJBFloatPot.h"
-#import "RJBLogWindow.h"
+//#import "RJBLogWindow.h"
 
 static UIWindow *win;
 
@@ -58,9 +58,7 @@ static UIWindow *win;
 //    win.windowLevel = UIWindowLevelAlert;
 //    win.backgroundColor = [UIColor blueColor];
 //    win.hidden = NO;
-    [RJBLogManager showLogWindow];
     
-    [RJBLogWindow sharedLogWindow].userInteractionEnabled = YES;
 
 }
 
@@ -69,7 +67,8 @@ static UIWindow *win;
     num ++ ;
     NSString *str = [NSString stringWithFormat:@"按钮点击了---%zd",num];
     
-    [RJBFloatPot sharedFloatPot];
+//    [RJBLogManager showLogWindow];
+    [RJBLogManager configLogView];
 }
 
 @end

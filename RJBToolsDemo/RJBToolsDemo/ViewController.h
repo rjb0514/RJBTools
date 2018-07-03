@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RJBLogHeader.h"
 
 @interface ViewController : UIViewController
 
