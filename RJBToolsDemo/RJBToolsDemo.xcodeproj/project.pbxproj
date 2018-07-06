@@ -16,6 +16,7 @@
 		9394758520E3829600C152D4 /* RJBToolsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9394758420E3829600C152D4 /* RJBToolsDemoTests.m */; };
 		9394759020E3829600C152D4 /* RJBToolsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9394758F20E3829600C152D4 /* RJBToolsDemoUITests.m */; };
 		9394759F20E382AC00C152D4 /* RJBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9394759E20E382AC00C152D4 /* RJBBaseViewController.m */; };
+		93E4D93620EF6F310033EED3 /* NSObject+RunTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E4D93520EF6F310033EED3 /* NSObject+RunTime.m */; };
 		93F36E7820E626D200E5E089 /* RJBLogBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 93F36E6620E626D200E5E089 /* RJBLogBundle.bundle */; };
 		93F36E7920E626D200E5E089 /* RJBLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E6720E626D200E5E089 /* RJBLogManager.m */; };
 		93F36E7A20E626D200E5E089 /* RJBFloatPotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F36E6920E626D200E5E089 /* RJBFloatPotViewController.m */; };
@@ -63,6 +64,8 @@
 		9394759120E3829600C152D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9394759D20E382AC00C152D4 /* RJBBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJBBaseViewController.h; sourceTree = "<group>"; };
 		9394759E20E382AC00C152D4 /* RJBBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJBBaseViewController.m; sourceTree = "<group>"; };
+		93E4D93420EF6F310033EED3 /* NSObject+RunTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+RunTime.h"; sourceTree = "<group>"; };
+		93E4D93520EF6F310033EED3 /* NSObject+RunTime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RunTime.m"; sourceTree = "<group>"; };
 		93F36E6620E626D200E5E089 /* RJBLogBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = RJBLogBundle.bundle; sourceTree = "<group>"; };
 		93F36E6720E626D200E5E089 /* RJBLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBLogManager.m; sourceTree = "<group>"; };
 		93F36E6920E626D200E5E089 /* RJBFloatPotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RJBFloatPotViewController.m; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		9394756A20E3829500C152D4 /* RJBToolsDemo */ = {
 			isa = PBXGroup;
 			children = (
+				93E4D93320EF6F070033EED3 /* RunTime */,
 				93FCE73320E6252500F967F6 /* LogTools */,
 				93FCE6FE20E4835200F967F6 /* Utils */,
 				9394756B20E3829500C152D4 /* AppDelegate.h */,
@@ -166,6 +170,15 @@
 				9394759120E3829600C152D4 /* Info.plist */,
 			);
 			path = RJBToolsDemoUITests;
+			sourceTree = "<group>";
+		};
+		93E4D93320EF6F070033EED3 /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				93E4D93420EF6F310033EED3 /* NSObject+RunTime.h */,
+				93E4D93520EF6F310033EED3 /* NSObject+RunTime.m */,
+			);
+			path = RunTime;
 			sourceTree = "<group>";
 		};
 		93F36E6820E626D200E5E089 /* FloatPot */ = {
@@ -353,6 +366,7 @@
 				93F36E7A20E626D200E5E089 /* RJBFloatPotViewController.m in Sources */,
 				9394757B20E3829600C152D4 /* main.m in Sources */,
 				93F36E7D20E626D200E5E089 /* RJBLogViewController.m in Sources */,
+				93E4D93620EF6F310033EED3 /* NSObject+RunTime.m in Sources */,
 				93F36E7C20E626D200E5E089 /* RJBLogCell.m in Sources */,
 				9394759F20E382AC00C152D4 /* RJBBaseViewController.m in Sources */,
 				9394756D20E3829500C152D4 /* AppDelegate.m in Sources */,

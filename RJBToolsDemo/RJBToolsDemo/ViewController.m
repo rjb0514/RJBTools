@@ -37,8 +37,9 @@ static UIWindow *win;
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [btn addGestureRecognizer:pan];
     
-    char *env ="DYLD_INSERT_LIBRARIES";
-    NSLog(@"%s",env);
+    NSArray *arr = [UIView fetchPropertyList];
+    NSLog(@"%@",arr);
+    
 }
 
 - (void)pan:(UIPanGestureRecognizer *)pan {

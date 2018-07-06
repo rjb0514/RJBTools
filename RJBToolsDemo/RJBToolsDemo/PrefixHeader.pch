@@ -12,7 +12,8 @@
 #ifdef __OBJC__
 
 
-#import "RJBLogHeader.h"
+//#import "RJBLogHeader.h"
+#import "NSObject+RunTime.h"
 
 
 #endif
